@@ -1,6 +1,7 @@
 {
   "name": "bookMe",
   "version": "0.1.0",
+  "homepage": "http://chranderson.github.io/bookMe",
   "private": true,
   "devDependencies": {
     "react-scripts": "0.6.1"
