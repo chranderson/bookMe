@@ -11,7 +11,7 @@ export default class TitleBar extends Component {
     } = this.props;
     return (
       <div className="titleBar" style={{flex: flex}}>
-        <span className="name">bookMe</span>
+        <a href="https://github.com/chranderson/bookMe" className="name" title="source code">bookMe</a>
         <div className="menu" />
       </div>
     );

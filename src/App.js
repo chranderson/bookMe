@@ -9,13 +9,13 @@ export default class App extends Component {
 
   static defaultProps = {
     bars: [
-      { name: '1', flex: 0 },
-      { name: '2', flex: 0 },
-      { name: '3', flex: 0 },
-      { name: '4', flex: 0 },
-      { name: '5', flex: 0 },
-      { name: '6', flex: 0 },
-      { name: '7', flex: 0 }
+      { name: '1', flex: 1 },
+      { name: '2', flex: 1 },
+      { name: '3', flex: 1 },
+      { name: '4', flex: 1 },
+      { name: '5', flex: 1 },
+      { name: '6', flex: 1 },
+      { name: '7', flex: 1 }
     ]
   }
 
@@ -43,7 +43,7 @@ export default class App extends Component {
           <FillerBar flex={0} label={'Today is'} text={this.getDate()} />
           <FillerBar flex={0} label={'The Time is'} text={this.getTime()} />
           { this.renderBars() }
-          <FillerBar flex={1} label={'dates label for cabins'} text={null} />
+          <FillerBar flex={0} label={'dates label for cabins'} text={null} />
         </div>
         <Footer flex={0} />
       </div>

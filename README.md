@@ -1,4 +1,5 @@
 # bookMe
+[View Live](https://chranderson.github.io/bookMe)
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
