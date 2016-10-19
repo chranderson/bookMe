@@ -1,0 +1,17 @@
+.fillerBar {
+  background: #f0f0f0;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  font-size: 0.8em;
+  /*min-height: 1.2em;*/
+}
+
+.details {
+  color: brown;
+  /*border: 1px solid blue;*/
+}

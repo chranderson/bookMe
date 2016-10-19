@@ -1,0 +1,12 @@
+.footer {
+  /*height: 2em;*/
+  background: #f0f0f0;
+  border-top: 1px solid grey;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 5px 10px;
+  font-size: 0.8em;
+  min-height: 1.2em;
+}
