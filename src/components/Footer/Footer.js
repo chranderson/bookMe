@@ -11,7 +11,7 @@ export default class Footer extends Component {
     } = this.props;
     return (
       <footer className="footer" style={{flex: flex}}>
-        This is the titleBar.
+        copyright 2016.
       </footer>
     );
   }

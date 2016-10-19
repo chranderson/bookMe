@@ -3,7 +3,8 @@ import './FillerBar.css';
 
 export default class FillerBar extends Component {
   static defaultProps = {
-    text: 'This is a FillerBar',
+    label: 'This is a',
+    text: 'FillerBar',
     flex: 0,
     height: '2em',
   }
@@ -13,10 +14,8 @@ export default class FillerBar extends Component {
     const {
       flex,
       height,
-      text
     } = this.props;
 
-    console.log(flex, height, text);
 
     return {
       flex: flex,
@@ -27,11 +26,13 @@ export default class FillerBar extends Component {
 
   render() {
     const {
+      label,
       text,
     } = this.props;
     return (
       <div className={'fillerBar'} style={this._getStyle()}>
-        {text}
+        {label}
+        <span className={'textSpan'}>{text}</span>
         <div className={'details'}>h {this.props.height}</div>
       </div>
     );
