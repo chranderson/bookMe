@@ -9,13 +9,11 @@ export default class FillerBar extends Component {
     height: '2em',
   }
 
-  _getStyle() {
-
+  _getStyle = () => {
     const {
       flex,
       height,
     } = this.props;
-
 
     return {
       flex: flex,
@@ -33,7 +31,6 @@ export default class FillerBar extends Component {
       <div className={'fillerBar'} style={this._getStyle()}>
         {label}
         <span className={'textSpan'}>{text}</span>
-        <div className={'details'}>h {this.props.height}</div>
       </div>
     );
   }

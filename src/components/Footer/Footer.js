@@ -8,10 +8,16 @@ export default class Footer extends Component {
   render() {
     const {
       flex,
+      today
     } = this.props;
     return (
       <footer className="footer" style={{flex: flex}}>
-        copyright 2016.
+        <span>
+          copyright {today.getFullYear()}.
+        </span>
+        <span>
+          {today.toLocaleTimeString()}
+        </span>
       </footer>
     );
   }
