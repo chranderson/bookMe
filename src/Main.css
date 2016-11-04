@@ -1,0 +1,59 @@
+.Main {
+  width: 100vw;
+  height: 100%;
+
+  /*height: 80vh;*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  /*align-items: center;*/
+  justify-content: space-between;
+}
+
+.leftSide, .rightSide {
+  flex: 1;
+  /*background: skyblue;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  /*margin: 0 1em;*/
+}
+
+.pod {
+  /*border: 3px solid yellow;*/
+  height: 50%;
+  /*width: 100%;*/
+  width: calc(100% - 6px);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 300;
+  font-family: droid-serif, serif;
+  letter-spacing: 0.04em;
+  font-size: 2em;
+
+  color: #212121;
+  background: transparent;
+  transition: background 0.25s ease;
+}
+
+.pod:last-of-type {
+  transform: translateY(-3px);
+}
+
+.pod:hover {
+  background: #040404;
+  color: red;
+  opacity: 0.9;
+  text-shadow: 2px 2px 5px  rgba(0,0,0,0.9);
+}
+
+
+/*
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}*/

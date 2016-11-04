@@ -25,12 +25,19 @@ export default class FillerBar extends Component {
   render() {
     const {
       label,
+      strike,
       text,
     } = this.props;
+
+    let labelStyle = 'label';
+    labelStyle += strike
+                ? ' strike'
+                : '';
+
     return (
       <div className={'fillerBar'} style={this._getStyle()}>
-        {label}
-        <span className={'textSpan'}>{text}</span>
+        <span className={labelStyle}>{label}</span>
+        <span className={'text'}>{text}</span>
       </div>
     );
   }

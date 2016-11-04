@@ -11,6 +11,7 @@ export default class TitleBar extends Component {
   render() {
     const {
       flex,
+      title,
       today
     } = this.props;
 
@@ -18,7 +19,9 @@ export default class TitleBar extends Component {
     const month = months[today.getMonth()];
     return (
       <div className="titleBar" style={{flex: flex}}>
-        <a href="https://github.com/chranderson/bookMe" className="name" title="source code">bookMe</a>
+        <a href="https://github.com/chranderson/bookMe" className="name" title="source code">
+          {title}
+        </a>
         <div className="menu">
           {day.slice(0, 3)} {month.slice(0, 3)} {today.getDate()}
         </div>

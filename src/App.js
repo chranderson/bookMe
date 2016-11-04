@@ -15,55 +15,6 @@ export default class App extends Component {
       { name: '5', flex: 1 },
       { name: '6', flex: 1 },
       { name: '7', flex: 1 },
-      { name: '1', flex: 1 },
-      { name: '2', flex: 1 },
-      { name: '3', flex: 1 },
-      { name: '4', flex: 1 },
-      { name: '5', flex: 1 },
-      { name: '6', flex: 1 },
-      { name: '7', flex: 1 },
-      { name: '1', flex: 1 },
-      { name: '2', flex: 1 },
-      { name: '3', flex: 1 },
-      { name: '4', flex: 1 },
-      { name: '5', flex: 1 },
-      { name: '6', flex: 1 },
-      { name: '7', flex: 1 },
-      { name: '1', flex: 1 },
-      { name: '2', flex: 1 },
-      { name: '3', flex: 1 },
-      { name: '4', flex: 1 },
-      { name: '5', flex: 1 },
-      { name: '6', flex: 1 },
-      { name: '7', flex: 1 },
-      { name: '1', flex: 1 },
-      { name: '2', flex: 1 },
-      { name: '3', flex: 1 },
-      { name: '4', flex: 1 },
-      { name: '5', flex: 1 },
-      { name: '6', flex: 1 },
-      { name: '7', flex: 1 },
-      { name: '1', flex: 1 },
-      { name: '2', flex: 1 },
-      { name: '3', flex: 1 },
-      { name: '4', flex: 1 },
-      { name: '5', flex: 1 },
-      { name: '6', flex: 1 },
-      { name: '7', flex: 1 },
-      { name: '1', flex: 1 },
-      { name: '2', flex: 1 },
-      { name: '3', flex: 1 },
-      { name: '4', flex: 1 },
-      { name: '5', flex: 1 },
-      { name: '6', flex: 1 },
-      { name: '7', flex: 1 },
-      { name: '1', flex: 1 },
-      { name: '2', flex: 1 },
-      { name: '3', flex: 1 },
-      { name: '4', flex: 1 },
-      { name: '5', flex: 1 },
-      { name: '6', flex: 1 },
-      { name: '7', flex: 1 },
     ]
   }
 
@@ -76,7 +27,7 @@ export default class App extends Component {
     } = this.props;
     return (
       <div className="NewApp" onMouseEnter={this.props.onMouseEnter}>
-        <TitleBar today={today} flex={0} />
+        <TitleBar flex={0} title={'checkout my dates'} today={today} />
         <div className="content" onClick={this.getDate}>
           <FillerBar flex={0} label={'new Date()'} text={today.toString()} />
           <FillerBar flex={0} label={'.getDate'} text={today.getDate()} />
@@ -103,14 +54,12 @@ export default class App extends Component {
           <FillerBar flex={0} label={'.toGMTString'} text={today.toGMTString()} />
           <FillerBar flex={0} label={'.toISOString'} text={today.toISOString()} />
           <FillerBar flex={0} label={'.toLocaleDateString'} text={today.toLocaleDateString()} />
-          <FillerBar flex={0} label={'.toLocaleFormat'} text={'not standard'} />
+          <FillerBar flex={0} label={'.toLocaleFormat'} text={'dont do it'} strike />
           <FillerBar flex={0} label={'.toLocaleString'} text={today.toLocaleString()} />
           <FillerBar flex={0} label={'.toLocaleTimeString'} text={today.toLocaleTimeString()} />
-          <FillerBar flex={0} label={'.toSource'} text={'not standard'} />
-          { this.renderBars() }
-          <FillerBar flex={0} label={'dates label for cabins'} text={null} />
+          <FillerBar flex={0} label={'.toSource'} text={'just dont do it'} strike />
         </div>
-        <Footer flex={0} today={today} />
+
       </div>
     );
   }

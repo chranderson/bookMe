@@ -1,7 +1,10 @@
+html {
+  overflow: hidden;
+}
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: Andale Mono, Courier;
   /*height: 100%;*/
   position: absolute;
   top: 0;
@@ -16,3 +19,6 @@ body {
   align-items: center;
   padding: 1em;
 }
+
+::-moz-selection { background: rgba(255,255,255,0.8); border-radius: 4px; text-shadow: none; }
+::selection { background: rgba(255,255,255,0.8); border-radius: 4px; text-shadow: none; }
